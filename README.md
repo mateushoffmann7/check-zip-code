@@ -1,4 +1,5 @@
-🔎 Consulta de Endereço por CEP
+**Consulta de Endereço por CEP**
+
 Uma aplicação web simples e interativa para consultar informações de endereço a partir de um CEP brasileiro. O projeto demonstra o consumo de uma API pública para enriquecer a experiência do usuário.
 
 <img width="1592" height="581" alt="image" src="https://github.com/user-attachments/assets/c1850883-e679-4992-aba3-7fd1332d8b3a" />
