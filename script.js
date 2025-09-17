@@ -22,7 +22,7 @@ const handleClickAdd = async () => {
       inputCep.value = "";
     }
   } catch (error) {
-    alert("Erro ao buscar CEP! Erro nos dados...");
+    alert("Erro ao buscar CEP! Dados incorretos...");
   }
 };
 
@@ -44,8 +44,14 @@ const handleEnterAdd = async (e) => {
       inputCep.value = "";
     }
   } catch (error) {
-    alert("Erro ao buscar CEP! Erro nos dados...");
+    alert("Erro ao buscar CEP! Dados Incorretos");
   }
 };
+
+const handleOnlyNumbers = (e) => {
+  e.target.value = e.target.value.replace(/[^0-9]/g, "");
+};
+
 buttonAdd.addEventListener("click", handleClickAdd);
 inputCep.addEventListener("keyup", handleEnterAdd);
+inputCep.addEventListener("input", handleOnlyNumbers);

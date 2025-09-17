@@ -22,6 +22,16 @@ body {
   background-color: #bf7e04;
   border-radius: 10px;
   height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.max-width {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-input {
@@ -30,6 +40,15 @@ body {
   align-items: center;
   justify-content: center;
   gap: 20px;
+}
+
+.input-adjust {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
 }
 
 .text-input h1 {
@@ -47,9 +66,9 @@ body {
   box-shadow: 1px 1px 1px black;
 }
 
-.text-input input {
+.input-cep {
   padding: 10px 100px;
-  width: auto;
+  width: 100%;
   border: transparent;
   background-color: #f2d3ac;
   box-shadow: 2px 1px 5px black;
@@ -65,7 +84,7 @@ body {
 .button-add {
   font-size: 12px;
   padding: 10px 100px;
-  width: 335px;
+  width: 100%;
   border: transparent;
   background-color: #f2d3ac;
   box-shadow: 2px 1px 5px black;
@@ -107,10 +126,15 @@ body {
   .button-add {
     font-size: 12px;
     padding: 5px 80px;
-    width: auto;
+    width: 100%;
+    text-decoration: none;
   }
 
-  .text-input input {
-    padding: 5px 33px;
+  .input-cep {
+    padding: 5px 50px;
+  }
+
+  .newLi {
+    font-size: 10px;
   }
 }
