@@ -127,15 +127,6 @@ body {
     font-size: 12px;
     padding: 5px 80px;
     width: 100%;
-    text-decoration: none;
-  }
-
-  .button-add:focus {
-    outline: none;
-    color: black;
-  }
-
-  .button-add:active {
     color: black;
   }
 
