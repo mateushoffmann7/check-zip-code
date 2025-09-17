@@ -97,7 +97,7 @@ body {
 
 @media (max-width: 450px) {
   .text-input h1 {
-    font-size: 14px;
+    font-size: 12px;
   }
   .bar {
     height: 3px;
