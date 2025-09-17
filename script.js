@@ -22,7 +22,7 @@ const handleClickAdd = async () => {
       inputCep.value = "";
     }
   } catch (error) {
-    alert("CEP inexistente incorreto...");
+    alert("CEP inexistente ou incorreto...");
   }
 };
 
@@ -44,7 +44,7 @@ const handleEnterAdd = async (e) => {
       inputCep.value = "";
     }
   } catch (error) {
-    alert("CEP inexistente incorreto...");
+    alert("CEP inexistente ou incorreto...");
   }
 };
 
