@@ -130,6 +130,15 @@ body {
     text-decoration: none;
   }
 
+  .button-add:focus {
+    outline: none;
+    color: black;
+  }
+
+  .button-add:active {
+    color: black;
+  }
+
   .input-cep {
     padding: 5px 50px;
   }
