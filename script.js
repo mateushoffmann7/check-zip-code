@@ -16,13 +16,14 @@ const handleClickAdd = async () => {
       }
       const address = json.logradouro !== "" ? json.logradouro : `não definida`;
       const newLi = document.createElement("li");
+      inputCep.classList.remove("errorInput");
       newLi.innerHTML = `O CEP ${json.cep} é do estado ${json.estado}, cidade ${json.localidade} e sua rua é ${address}.`;
       newLi.classList.add("newLi");
       listUl.append(newLi);
       inputCep.value = "";
     }
   } catch (error) {
-    alert("CEP inexistente ou incorreto...");
+    inputCep.classList.toggle("errorInput");
   }
 };
 
@@ -38,13 +39,14 @@ const handleEnterAdd = async (e) => {
       }
       const address = json.logradouro !== "" ? json.logradouro : `não definida`;
       const newLi = document.createElement("li");
+      inputCep.classList.remove("errorInput");
       newLi.innerHTML = `O CEP ${json.cep} é do estado ${json.estado}, cidade ${json.localidade} e sua rua é ${address}.`;
       newLi.classList.add("newLi");
       listUl.append(newLi);
       inputCep.value = "";
     }
   } catch (error) {
-    alert("CEP inexistente ou incorreto...");
+    inputCep.classList.toggle("errorInput");
   }
 };
 

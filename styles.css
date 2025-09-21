@@ -81,6 +81,11 @@ body {
   font-size: 12px;
 }
 
+.errorInput {
+  background-color: rgba(175, 65, 65, 0.5);
+  border: rgb(194, 47, 47) 1px solid;
+}
+
 .button-add {
   font-size: 12px;
   padding: 10px 100px;
